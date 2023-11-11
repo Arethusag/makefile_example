@@ -1,0 +1,52 @@
+%------------------------------------------------------------------------------
+% document class article
+
+\documentclass[12pt]{article}
+
+%------------------------------------------------------------------------------
+% Packages
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+%------------------------------------------------------------------------------
+% Title
+
+\title{Title}
+\author{Author}
+\date{\today}
+
+%------------------------------------------------------------------------------
+% Begin document
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is a test latex document for creating a pdf. 
+\end{abstract}
+
+\section{Introduction}
+Cars scatter plot.
+
+%insert image cars.png
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{cars.png}
+\caption{Cars}
+\end{figure}
+
+\section{Data}
+Cars regression table.
+
+%insert table tab.tex
+
+\input{reg.tex}
+
+
+\section{Conclusion}
+End of Document.
+
+\tiny{This is a test document.}
+\end{document}
